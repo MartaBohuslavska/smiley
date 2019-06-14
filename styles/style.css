@@ -1,0 +1,728 @@
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    min-height: 160px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+    box-sizing: border-box;
+}
+
+.header-top {
+    min-height: 50px;
+    background-color: #1976d2;
+}
+
+.header-bottom {
+    min-height: 110px;
+    background-color: #fff;
+}
+
+.minibar {
+    min-height: 50px;
+    color: #ddd;
+    padding: 0 102px;
+    box-sizing: border-box;
+}
+
+.contakts {
+    padding-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    float: left;
+    box-sizing: border-box;
+}
+
+.contakts i {
+    margin-left: 20px;
+}
+
+.socialIcons {
+    padding-top: 13px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.clr {
+    clear: both;
+}
+
+.socialIcons i,
+.fa-search {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #2095f2;
+    text-align: center;
+    padding-top: 7px;
+    box-sizing: border-box;
+}
+
+.socialIcons i:hover {
+    background-color: #f95d5a;
+    color: #fff;
+}
+
+.fa-search {
+    width: 32px;
+    height: 32px;
+    padding-top: 8px;
+    background-color: #f95d5a;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.logo {
+    padding-top: 30px;
+    padding-left: 100px;
+    float: left;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.nav li {
+    display: inline;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:hover {
+    color: #f95d5a;
+    padding-bottom: 34px;
+    border-bottom: 3px solid #f95d5a;
+    box-sizing: border-box;
+}
+
+.nav a.none {
+    border-bottom: none;
+}
+
+.hero {
+    margin-top: 40px;
+    height: 910px;
+    background-image: url(../images/background1.jpeg);
+    background-size: cover;
+    padding-top: 398px;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero span {
+    color: #03a9f4;
+}
+
+.hero h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.hero button,
+.portfolio button {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 45px;
+    line-height: 3.433;
+    width: 190px;
+    height: 60px;
+    background-color: #2095f2;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.hero button:hover,
+.portfolio button:hover {
+    cursor: pointer;
+}
+
+.services {
+    background-color: #1976d2;
+    min-height: 200px;
+}
+
+.blockServices {
+    margin: 0 auto;
+    max-width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.serv {
+    text-align: center;
+    line-height: 30px;
+    padding: 50px 60px;
+    box-sizing: border-box;
+    width: 244px;
+    height: 200px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.serv:nth-child(2n+1) {
+    background-color: #1976d2;
+}
+
+.serv:nth-child(2n) {
+    background-color: #03a9f4;
+}
+
+.serv i {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+.offer {
+    min-height: 715px;
+    padding: 122px 350px 110px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.description {
+    width: 380px;
+    min-height: 135px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.description i {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-color: #f95d5a;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    padding-top: 13px;
+    box-sizing: border-box;
+}
+
+.description p {
+    color: #777;
+    font-weight: 400;
+    padding-left: 58px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.description h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 36px;
+    margin-left: 58px;
+}
+
+.video {
+    height: 532px;
+    background-image: url(../images/background2.jpeg);
+    background-size: cover;
+}
+
+.portfolio {
+    margin-top: 120px;
+    min-height: 1580px;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+.title h2 {
+    font-size: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 36px;
+}
+
+.title p {
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.portfolio hr,
+.team hr,
+.testimonials hr,
+.pricing hr {
+    width: 50px;
+    height: 3px;
+    border: none;
+}
+
+.portfolio hr,
+.pricing hr {
+    background-color: #03a9f4;
+    margin-bottom: 75px;
+}
+
+.team hr {
+    margin-bottom: 72px;
+}
+
+.team hr,
+.testimonials hr {
+    background-color: #fff;
+}
+
+.category li {
+    display: inline;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.category a {
+    text-decoration: none;
+    color: black;
+    padding: 13px 16px;
+}
+
+.category a:hover {
+    color: #fff;
+    background-color: #2095f2;
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ninePhotos {
+    margin: 45px 350px 0px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.image {
+    width: 370px;
+    height: 330px;
+    color: #fff;
+    border: 8px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    margin: 15px 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.image-hover {
+    text-align: center;
+    padding-top: 110px;
+    box-sizing: border-box;
+}
+
+.image-hover i {
+    width: 32px;
+    height: 32px;
+    padding-top: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    color: #03a9f4;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.image-hover h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 26px;
+}
+
+.image-hover h4 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.image-1 {
+    background-image: url(../images/portfolio/image1.jpg);
+}
+
+.image-2 {
+    background-image: url(../images/portfolio/image2.jpg);
+}
+
+.image-3 {
+    background-image: url(../images/portfolio/image3.jpg);
+}
+
+.image-4 {
+    background-image: url(../images/portfolio/image4.jpg);
+}
+
+.image-5 {
+    background-image: url(../images/portfolio/image5.jpg);
+}
+
+.image-6 {
+    background-image: url(../images/portfolio/image6.jpg);
+}
+
+.image-7 {
+    background-image: url(../images/portfolio/image7.jpg);
+}
+
+.image-8 {
+    background-image: url(../images/portfolio/image8.jpg);
+}
+
+.image-9 {
+    background-image: url(../images/portfolio/image9.jpg);
+}
+
+.image-hover {
+    width: 354px;
+    height: 314px;
+    display: none;
+    background-color: rgba(3, 169, 244, 0.9);
+    position: absolute;
+}
+
+.image:hover>.image-hover {
+    display: block;
+}
+
+.portfolio button {
+    width: 170px;
+    height: 50px;
+    margin-top: 62px;
+    margin-bottom: 110px;
+}
+
+.team {
+    min-height: 950px;
+    background-color: #1976d2;
+    color: #fff;
+    text-align: center;
+    padding-top: 120px;
+    box-sizing: border-box;
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.person {
+    width: 370px;
+    height: 550px;
+    padding-bottom: 32px;
+    box-sizing: border-box;
+    background-color: #2095f2;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.person_3 {
+    margin-right: 0px;
+}
+
+.person .foto {
+    width: 235px;
+    height: 235px;
+    border: 10px solid #03a9f4;
+    border-radius: 50%;
+    margin: 70px 66px;
+    box-sizing: border-box;
+}
+
+.foto_1 {
+    background-image: url(../images/photos/person_1.jpg);
+}
+
+.foto_2 {
+    background-image: url(../images/photos/person_2.jpg);
+}
+
+.foto_3 {
+    background-image: url(../images/photos/person_3.jpg);
+}
+
+.names {
+    border-top: 1px solid #03a9f4;
+    padding-top: 64px;
+}
+
+.fotos h3,
+.fotos h4 {
+    text-transform: uppercase;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.fotos h3 {
+    font-size: 20px;
+}
+
+.fotos h4 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.person .icons {
+    width: 200px;
+    padding-top: 12px;
+    box-sizing: border-box;
+    border-top: 1px solid #03a9f4;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icons i {
+    width: 35px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.person:hover>.foto {
+    border: 10px solid #fff;
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.person:hover>.names,
+.person:hover>.icons {
+    border-top: 1px solid #fff;
+    transition: 0.8s;
+}
+
+.icons i:hover {
+    color: #ef5350;
+}
+
+.factes {
+    background-color: #f5f5f5;
+    min-height: 250px;
+    padding: 90px 374px 60px;
+    box-sizing: border-box;
+}
+
+.blockFact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.fact {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fact i {
+    font-size: 30px;
+    color: #ef5350;
+    line-height: 0.882;
+}
+
+.fact span {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.fact p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.testimonials {
+    min-height: 763px;
+    background-color: #1976d2;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px 122px;
+    box-sizing: border-box;
+}
+
+.blockPeople {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 0 40px;
+}
+
+.man {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #03a9f4;
+    border-radius: 50%;
+    margin: 75px 32px 0px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.name {
+    margin: 40px 14px 0 15px;
+    box-sizing: border-box;
+    width: 135px;
+    height: 40px;
+}
+
+.man_1 {
+    background-image: url(../images/people/man_1.jpg);
+}
+
+.man_2 {
+    background-image: url(../images/people/man_2.jpg);
+}
+
+.man_3 {
+    background-image: url(../images/people/man_3.jpg);
+}
+
+.blockContent {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 968px;
+    max-width: 968px;
+    min-height: 148px;
+    border: 1px solid #fff;
+    padding: 45px 60px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.714;
+}
+
+.content i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #1976d2;
+    background-color: #fff;
+    padding-top: 7px;
+    box-sizing: border-box;
+}
+
+.content i:hover {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+    background-color: #ef5350;
+    color: #fff;
+}
+
+.content i.fa-angle-left {
+    position: absolute;
+    top: 50%;
+    left: -16px;
+}
+
+.content i.fa-angle-right {
+    position: absolute;
+    top: 50%;
+    right: -16px;
+}
+
+.clients {
+    min-height: 190px;
+    background-color: #f5f5f5;
+    margin-top: 0px;
+}
+
+.client {
+    margin-bottom: 30px;
+}
+.blockClients {
+    margin: 0 475px;
+    padding-top: 50px;
+    max-width: 970px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.tariffPlans {
+    display: flex;
+    justify-content: center;
+}
+
+.plan {
+    text-align: center;
+    width: 366px;
+    height: 556px;
+    margin: 0 10px;
+    padding: 35px;
+}
+
+
+
+.pricing {
+    padding: 120px 0;
+    min-height: 1045px;
+}
+
+.latest {
+    min-height: 780px;
+}
+
+.newsletter {
+    min-height: 542px;
+    background-color: #f5f5f5;
+}
+
+.footer {
+    min-height: 211px;
+    background-color: #1976d2;
+}
