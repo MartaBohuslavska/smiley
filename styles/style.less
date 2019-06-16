@@ -49,7 +49,6 @@ header {
     
     .minibar {
         min-height: 50px;
-        color: #ddd;
         padding: 0 102px;
         box-sizing: border-box;
         display: flex;
@@ -63,14 +62,18 @@ header {
 
 .contakts {
     padding-top: 20px;
-    font-family: "Montserrat", sans-serif;
     font-weight: 300;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
 
-    i {
-        margin-left: 20px;
+    a{
+        color: #ddd;
+        font-family: "Montserrat", sans-serif;
+    
+        i {
+            margin-left: 20px;
+        }
     }
 }
 
@@ -87,42 +90,65 @@ header {
             padding-left: 100px;
             box-sizing: border-box;
         }
-        
-        nav .nav {
-            .flexWrapCenter;
-            align-items: center;
-            margin-right: 100px;
-            padding-top: 40px;
-            box-sizing: border-box;
+
+        nav ul {
+                .flexWrapCenter;
+                align-items: center;
+                margin-right: 100px;
+                padding-top: 40px;
+                box-sizing: border-box;
+    
+                li {
+                    display: inline-block;
+                    margin: 0 5px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+    
+                    a{
+                        &:hover {
+                            color: @hoverColor;
+                            padding-bottom: 40px;
+                            border-bottom: 3px solid @hoverColor;
+                            box-sizing: border-box;
+                        }
+                    }
+                    
+                }
+
         }
+        
     }   
 }
 
-nav .nav li {
-    margin: 0 5px;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-
-    .fa-search {
-        width: 32px;
-        height: 32px;
-        padding-top: 8px;
-        background-color: @hoverColor;
-        color: #fff;
-        box-sizing: border-box;
-    }
-}
-
-.nav a:hover {
-    color: @hoverColor;
-    padding-bottom: 40px;
-    border-bottom: 3px solid @hoverColor;
-    box-sizing: border-box;
-}
-
-.nav a.none {
+ul a.none {
     border-bottom: none; 
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+nav label { 
+    display: none;   
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav .fa-bars {
+    color: @buttonColor;
+    font-size: 32px;
+    position: absolute;
+    top: 130px;
+    right: 10px;
+
+    &:hover {
+        color: @buttonColor;
+        padding: 5px;
+        box-sizing: border-box;
+        border: 1px solid @buttonColor;
+    }
 }
 
 .socialIcons i,
@@ -137,6 +163,15 @@ nav .nav li {
     color: @buttonColor;
     text-align: center;
     padding-top: 7px;
+    box-sizing: border-box;
+}
+
+.fa-search {
+    width: 32px;
+    height: 32px;
+    padding-top: 8px;
+    background-color: @hoverColor;
+    color: #fff;
     box-sizing: border-box;
 }
 
@@ -188,6 +223,8 @@ nav .nav li {
 
     &:hover {
         cursor: pointer;
+        background-color: #fff;
+        color: @buttonColor;
     }
 }
 
@@ -830,6 +867,7 @@ nav .nav li {
 
     .background {
         background-image: url(../images/news/new.jpg);
+        background-size: cover;
         width: 370px;
         height: 280px;
     }
@@ -933,6 +971,8 @@ form {
 
         &:hover {
             cursor: pointer;
+            color: @buttonColor;
+            background-color: #fff;
         }
 
         i.fa-check-circle {
@@ -996,7 +1036,7 @@ input[type="email"]::placeholder {
                 margin: 0;
             }
     
-            nav .nav {
+            nav ul {
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
@@ -1007,16 +1047,22 @@ input[type="email"]::placeholder {
                     text-align: center;
                     margin: 10px;
                     padding: 0;
+
+                    a{
+                        &:hover {
+                            color: @hoverColor;
+                            padding-bottom: 19px;
+                            border-bottom: 3px solid @hoverColor;
+                            box-sizing: border-box;
+                        }
+                    }
                 } 
             }
         }
     }
 
-    .nav a:hover {
-        color: @hoverColor;
-        padding-bottom: 29px;
-        border-bottom: 3px solid @hoverColor;
-        box-sizing: border-box;
+    nav ul a.none {
+        border-bottom: none; 
     }
 
     .portfolio .ninePhotos {
@@ -1031,6 +1077,69 @@ input[type="email"]::placeholder {
 @media (max-width: 770px) {
     .newsletter form input[type="email"] {
         width: auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    
+    header .header-bottom .logoAndNav {
+    
+        .logo {
+            text-align: left;
+            float: left;
+            padding-top: 15px;
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+        
+        nav {
+
+            input[type="checkbox"]:checked ~ label + ul {
+                display: block;
+            }
+
+            label{
+            display: inline-block;
+            }
+
+            ul {
+            display: none;
+            }
+        }
+    }
+
+    .contakts a {
+        span{
+            display: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        i {
+            font-size: 26px;
+        }
+    }
+
+    .header-bottom {
+        min-height: 30px;
+    }
+
+    .fotos .person {
+        width: 300px;
+        height: 450px;
+
+        .foto {
+            margin: 20px auto;
+        }
+    }
+
+    .latest .post {
+        width: 300px;
+        margin: 5px 15px;
+
+        .background {
+            width: 300px;
+            background-size: cover;
+        }
     }
 }
 
