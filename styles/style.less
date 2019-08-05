@@ -508,7 +508,9 @@ nav .fa-bars {
     box-sizing: border-box;
 
     .fotos {
-        .flexWrapCenter;   
+        .flexWrapCenter; 
+        max-width: 1500px; 
+        margin: auto; 
     }    
 }
 
@@ -526,7 +528,7 @@ nav .fa-bars {
         height: 235px;
         border: 10px solid @secondColor;
         border-radius: 50%;
-        margin: 70px 66px;
+        margin: 70px auto;
         box-sizing: border-box;
     }
 
@@ -540,7 +542,11 @@ nav .fa-bars {
     
     .foto_3 {
         background-image: url(../images/photos/person_3.jpg);
-    } 
+    }
+
+    .foto_4 {
+        background-image: url(../images/photos/person_4.jpg);
+    }
     
     .names {
         border-top: 1px solid @secondColor;
@@ -644,24 +650,30 @@ nav .fa-bars {
 
     .blockPeople {
         .flexWrapCenter;
-        margin: 0px 0 40px;
-
-        .man {
-            width: 100px;
-            height: 100px;
-            border: 5px solid @secondColor;
-            border-radius: 50%;
-            margin: 75px 32px 0px;
-            box-sizing: border-box;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+        margin: 20px auto;
+        max-width: 500px;
         
-        .name {
-            margin: 40px 14px 0 15px;
-            box-sizing: border-box;
-            width: 135px;
-            height: 40px;
+        
+        .people{
+            outline: none;
+
+            .man {
+                width: 100px;
+                height: 100px;
+                border: 5px solid @secondColor;
+                border-radius: 50%;
+                margin: 36px auto;
+                box-sizing: border-box;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .name {
+                margin: 20px auto;
+                box-sizing: border-box;
+                width: 135px;
+                height: 40px;
+            }
         }
     }
 }
@@ -678,28 +690,41 @@ nav .fa-bars {
     background-image: url(../images/people/man_3.jpg);
 }
 
-.reviews .content {
-    .flexWrapCenter;
-    margin: auto;
-    max-width: 968px;
-    min-height: 148px;
-    border: 1px solid #fff;
-    padding: 45px 60px;
-    box-sizing: border-box;
-    position: relative;
+.man_4 {
+    background-image: url(../images/people/man_4.jpg);
+}
 
-    p {
-        font-size: 16px;
-        line-height: 1.714;
+.reviews .content {
+    position: relative;
+    max-width: 968px;
+    margin: auto;
+
+    .textSlider{
+        .flexWrapCenter;
+        min-height: 148px;
+        border: 1px solid #fff;
+        padding: 45px 60px;
+        box-sizing: border-box;
+                    
+        p {
+            font-size: 16px;
+            line-height: 1.714;
+            outline: none;
+        }
     }
-    
-    i {
+        
+    .slide-prev, .slide-next {
         width: 30px;
         height: 30px;
+        border: none;
+        outline: none;
         border-radius: 50%;
         color: @mainColor;
         background-color: #fff;
-        padding-top: 7px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+        font-weight: bold;
         box-sizing: border-box;
 
         &:hover {
@@ -708,18 +733,20 @@ nav .fa-bars {
             color: #fff;
         }
     }
-}
 
-.content i.fa-angle-left {
-    position: absolute;
-    top: 50%;
-    left: -16px;
-}
+    .slide-prev {
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        left: -16px;
+    }
 
-.content i.fa-angle-right {
-    position: absolute;
-    top: 50%;
-    right: -16px;
+    .slide-next {
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        right: -16px;
+    }
 }
 
 .clients {

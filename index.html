@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/logo-icon.png">
     <title>Smiley</title>
-
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/slick-theme.css">
     <link rel="stylesheet/less" href="styles/style.less">
     <script src="js/less.min.js"></script>
 </head>
@@ -296,7 +297,7 @@
             </div>
 
             <div class="fotos">
-                <div class="person person_1">
+                <div class="person person_1" >
                     <div class="foto foto_1"></div>
                     <div class="names">
                         <h3>Faridul Haque</h3>
@@ -331,6 +332,21 @@
                     <div class="names">
                         <h3>Farhan Al Faud</h3>
                         <h4>UI/UX designer</h4>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="person person_4">
+                    <div class="foto foto_4"></div>
+                    <div class="names">
+                        <h3>Angelina Fuad Jolie</h3>
+                        <h4>Fasion designer</h4>
                     </div>
                     <div class="icons">
                         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -392,7 +408,7 @@
                 <div class="people">
                     <div class="man man_2"></div>
                     <div class="name">
-                        <h3>Watson Emma</h3>
+                        <h3>Priston Mark</h3>
                         <h4>CEO</h4>
                     </div>
                 </div>
@@ -400,22 +416,38 @@
                 <div class="people">
                     <div class="man man_3"></div>
                     <div class="name">
-                        <h3>Watson Emma</h3>
+                        <h3>Katchon Liza</h3>
+                        <h4>CEO</h4>
+                    </div>
+                </div>
+
+                <div class="people">
+                    <div class="man man_4"></div>
+                    <div class="name">
+                        <h3>Watson Edward</h3>
                         <h4>CEO</h4>
                     </div>
                 </div>
             </div>
 
             <div class="content">
-                <p>Primis vocent comprehensam an vix, qui ferri alterum appareat id. Debitis nominati pertinacia ut nam. Te quo fastidii vituperata neglegentur, am offendit nec ut. Autem accumsan urbanitas no nam. Et qui eirmod vocent appareat. Tota graeci
-                    alterum ea eos, eu sint similiqtur, quidam offendit nec ut.
-                </p>
-                <a href="#">
+                <div class="textSlider">
+                    <p>Primis vocent comprehensam an vix, qui ferri alterum appareat id. Debitis nominati pertinacia ut nam. Te quo fastidii vituperata neglegentur, am offendit nec ut. Autem accumsan urbanitas no nam. Et qui eirmod vocent appareat. Tota graeci
+                        alterum ea eos, eu sint similiqtur, quidam offendit nec ut.
+                    </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eveniet necessitatibus recusandae sunt. Illo voluptatum, rerum quos modi quasi mollitia odit nulla, laborum soluta atque, error commodi? Sint, dicta excepturi?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum aliquid asperiores, quibusdam eligendi ratione maxime. Eum vitae iure quasi voluptatum? Quasi, doloremque adipisci? Laborum quibusdam cum reprehenderit et earum?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos veritatis nobis quod blanditiis ad eum quis error corrupti? Impedit in eos veritatis perferendis a id est deserunt molestias fugit minima?
+                    </p>
+                </div>
+                <button class="slide-prev">
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
-                </a>
-                <a href="#">
+                </button>
+                <button class="slide-next">
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </a>
+                </button>
             </div>
 
         </section>
@@ -571,6 +603,9 @@
         </div>
     </div>
 
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
