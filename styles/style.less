@@ -184,12 +184,12 @@ nav .fa-bars {
     margin-top: 40px;
     height: 910px;
     background-image: url(../images/background1.jpeg);
-    background-size: cover;
+    max-height: 500px;
     padding-top: 398px;
     text-align: center;
     color: #fff;
     line-height: 60px;
-
+    
     h1 {
         font-size: 56px;
         font-weight: bold;
@@ -304,12 +304,6 @@ nav .fa-bars {
             margin-left: 58px;
         }
     }
-}
-
-.video {
-    height: 532px;
-    background-image: url(../images/background2.jpeg);
-    background-size: cover;
 }
 
 .portfolio {
@@ -508,7 +502,6 @@ nav .fa-bars {
     box-sizing: border-box;
 
     .fotos {
-        .flexWrapCenter; 
         max-width: 1500px; 
         margin: auto; 
     }    
@@ -649,7 +642,6 @@ nav .fa-bars {
     box-sizing: border-box;
 
     .blockPeople {
-        .flexWrapCenter;
         margin: 20px auto;
         max-width: 500px;
         
@@ -700,7 +692,6 @@ nav .fa-bars {
     margin: auto;
 
     .textSlider{
-        .flexWrapCenter;
         min-height: 148px;
         border: 1px solid #fff;
         padding: 45px 60px;
@@ -995,6 +986,7 @@ form {
         height: 50px;
         background-color: @buttonColor;
         border: none;
+        outline: none;
 
         &:hover {
             cursor: pointer;
@@ -1167,6 +1159,12 @@ input[type="email"]::placeholder {
             width: 300px;
             background-size: cover;
         }
+    }
+
+    .plan:hover {
+        transform: scale(1.01);
+        transition: 0.7s;
+        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
     }
 }
 
