@@ -208,4 +208,38 @@ $(document).ready(function() {
         })
         return false;
     });
+
+    $("#all").click(function(){
+        $(".image").show();
+        return false
+    });
+    
+    $("#photography").click(function(){
+        $(".image").hide();
+        $(".image-1").show();
+        $(".image-8").show();
+        return false
+    });
+
+    $("#brand_ideneity").click(function(){
+        $(".image").hide();
+        $(".image-2").show();
+        return false
+    });
+
+    $("#ui-ux").click(function(){
+        $(".image").hide();
+        $(".image-4").show();
+        $(".image-5").show();
+        $(".image-9").show();
+        return false
+    });
+
+    $("#development").click(function(){
+        $(".image").hide();
+        $(".image-3").show();
+        $(".image-6").show();
+        $(".image-7").show();
+        return false
+    });
 });
